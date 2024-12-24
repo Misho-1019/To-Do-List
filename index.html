@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+    <section class="heroSection d-flex direction-column align-items-center ">
+        <div class="container d-flex direction-column">
+            <h1 class="d-flex align-items-center">To-Do-List <i class="fa-solid fa-circle-check"></i></h1>
+            <div class="header d-flex direction-row align-items-center justify-content-between">
+                <p class="d-flex">New Task:</p>
+                <input type="text" name="task" id="task" placeholder="Enter your new task...">
+                <input type="date" name="date" id="date">
+                <button class="add"><i class="fa-regular fa-square-plus"></i></button>
+            </div>
+            <div class="tasks">
+                <h3>Listed Tasks</h3>
+                <ul id="tasks d-flex direction-column">
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
